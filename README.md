@@ -24,6 +24,11 @@ Ensure you have the following installed on your machine:
 - Node.js (version 14 or later)
 - npm (version 6 or later)
 
+## Attention
+   International Space Station use unsecure http api which leads to broke Same Origin Policy.
+
+   For correct site work use **local running that describes below** or **deploy version with mannually disable browser safe mode**.
+
 ### Installation
 
 1. **Clone the repository**
