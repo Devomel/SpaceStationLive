@@ -1,13 +1,15 @@
 .crewList {
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 70vh;
 }
 
 .crewList__item {
   border: 2px solid #000;
-  border-radius: 6px;
+  border-radius: 9px;
   display: flex;
   justify-content: center;
   align-items: center;

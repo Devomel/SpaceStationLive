@@ -7,10 +7,18 @@ interface ITimeProps {
 }
 export const Time: FC<ITimeProps> = ({ timestamp }) => {
   const { day, dayOfWeek, time, year } = getTimeInUTC(timestamp)
+
   return (
     <>
-      <div>Current UTC Time: {time}</div>
-      <div>{dayOfWeek}, {day}, {year}</div>
+      <div style={{ gridColumnStart: 3, gridRowStart: 1 }}>
+        <span>
+          Current UTC Time: {time}
+          <br />
+          {dayOfWeek}, {day}, {year}
+        </span>
+      </div>
+
+
     </>
   )
 }

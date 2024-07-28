@@ -4,13 +4,13 @@ import { CrewItem } from "./CrewItem";
 
 export const CrewList = () => {
   const { isLoading, data: crew, error } = issSlice.useFetchCrewInISSQuery("", {
-    pollingInterval: 5000
+    pollingInterval: 50000
   })
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error occurred</div>;
   console.log(crew)
   if (crew) return (
-    <div style={{ height: "100%", width: "100%" }} className="crewList">
+    <div style={{ height: "100%" }} className="crewList">
       {
         crew.map(item => <CrewItem astronaut={item} key={item.name} />)
       }
