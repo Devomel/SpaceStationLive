@@ -23,8 +23,6 @@ export const Map: FC<IMapProps> = ({ children }) => {
     }),
     pollingInterval: 5000
   })
-
-  console.log("render map")
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error occurred</div>;
   if (location && location[2])
