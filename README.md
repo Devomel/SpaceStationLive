@@ -12,7 +12,9 @@ This application fetches the current geographic coordinates of the ISS and displ
 - **Real-Time Data**: Fetches real-time data about the ISS position and crew members.
 - **Responsive Design**: Ensures the application looks good on various devices.
 - **TypeScript**: Provides type safety for the application.
-![plot](https://drive.google.com/file/d/1uBPxEAlCbqhYWd7F0zRkeW-o1crVatif/view?usp=drive_link))
+<p align="center">
+  <img src="https://drive.google.com/file/d/1uBPxEAlCbqhYWd7F0zRkeW-o1crVatif/view?usp=drive_link" width="350" title="hover text">
+</p>
 
 ## Getting Started
 
