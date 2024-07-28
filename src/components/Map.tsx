@@ -23,7 +23,8 @@ export const Map: FC<IMapProps> = ({ children }) => {
         <div className="mapContainer">
           <LocationText location={location} />
           <Time timestamp={location[2]} />
-          <MapContainer center={location} zoom={5} scrollWheelZoom={false} style={{ height: "70vh", width: "100%", gridColumnStart: 1, gridColumnEnd: 3 }}>
+          <MapContainer center={location} zoom={5} scrollWheelZoom={false}
+            className="map">
             <TileLayer
               attribution=''
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

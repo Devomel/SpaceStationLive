@@ -1,5 +1,6 @@
 import { LatLngTuple } from "leaflet"
 import { FC } from "react"
+import "../styles/locationText.css"
 
 interface ILocationTextProps {
   location: LatLngTuple
@@ -7,9 +8,9 @@ interface ILocationTextProps {
 
 export const LocationText: FC<ILocationTextProps> = ({ location }) => {
   return (
-    <div style={{ gridColumnStart: 1, gridRowStart: 1 }}>
+    <div className="locationText">
       <span>
-        ISS current location: <br />
+        <span style={{ whiteSpace: "nowrap" }}>ISS current location:</span>  <br />
         longitude: {location[0]} <span style={{ whiteSpace: "nowrap" }}>latitude: {location[1]}</span>
       </span>
     </div>

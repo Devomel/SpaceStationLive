@@ -1,0 +1,11 @@
+.timeText {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+@media (max-width: 500px) {
+  .timeText {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}

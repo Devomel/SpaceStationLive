@@ -10,11 +10,13 @@ export const CrewList = () => {
   if (error) return <div>Error occurred</div>;
   console.log(crew)
   if (crew) return (
-    <div style={{ height: "100%" }} className="crewList">
+
+    <div className="crewList">
+      <p>Number of crew ISS: {crew.length}</p>
       {
         crew.map(item => <CrewItem astronaut={item} key={item.name} />)
       }
-      <p>Number of crew ISS {crew.length}</p>
+
     </div>
   )
 }

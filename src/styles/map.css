@@ -3,3 +3,17 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
+
+.map {
+  height: 70vh;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3
+}
+
+@media (max-width: 500px) {
+  .mapContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

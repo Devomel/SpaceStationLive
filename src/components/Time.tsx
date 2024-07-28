@@ -1,6 +1,6 @@
 import { FC } from "react"
 import getTimeInUTC from "../utils/DateUtil"
-
+import "../styles/timeText.css"
 
 interface ITimeProps {
   timestamp: number
@@ -10,7 +10,7 @@ export const Time: FC<ITimeProps> = ({ timestamp }) => {
 
   return (
     <>
-      <div style={{ gridColumnStart: 3, gridRowStart: 1 }}>
+      <div className="timeText">
         <span>
           Current UTC Time: {time}
           <br />
