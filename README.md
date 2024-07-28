@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# ISS Tracker with React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project tracks the current location of the International Space Station (ISS) and displays it on a map using React, TypeScript, Vite, and the Leaflet library. It also provides information about the current crew members aboard the ISS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application fetches the current geographic coordinates of the ISS and displays its position on an interactive map. Additionally, it shows the current UTC time, date, and a list of the crew members currently on board the ISS.
 
-## Expanding the ESLint configuration
+### Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interactive Map**: Uses Leaflet to display the ISS location on a world map.
+- **Real-Time Data**: Fetches real-time data about the ISS position and crew members.
+- **Responsive Design**: Ensures the application looks good on various devices.
+- **TypeScript**: Provides type safety for the application.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Follow these steps to run the project locally.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+- Node.js (version 14 or later)
+- npm (version 6 or later)
+
+### Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    ```
+
+2. **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+### Running the Project
+
+To start the development server, run:
+```bash
+npm run dev
