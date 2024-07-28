@@ -1,9 +1,7 @@
-import 'leaflet/dist/leaflet.css';
 import { Map } from './components/Map';
 import "./styles/container.css"
-import "./styles/map.css"
 import { CrewList } from './components/CrewList';
-
+import "./styles/media.css"
 
 
 function App() {
@@ -17,6 +15,5 @@ function App() {
     </>
   )
 }
-
 
 export default App

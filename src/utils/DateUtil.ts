@@ -12,7 +12,7 @@ export default function getTimeInUTC(timestamp: number): TimeData {
     const date = new Date(timestamp * 1000);
 
     const year = date.getUTCFullYear();
-    const month = ('0' + (date.getUTCMonth() + 1)).slice(-2);
+    const month = date.toLocaleString('en-US', { month: 'long', timeZone: 'UTC' });
     const day = ('0' + date.getUTCDate()).slice(-2);
     const hours = ('0' + date.getUTCHours()).slice(-2);
     const minutes = ('0' + date.getUTCMinutes()).slice(-2);

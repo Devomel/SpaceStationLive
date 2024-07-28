@@ -17,11 +17,3 @@
   padding: 8px;
   font-size: 1.3rem;
 }
-
-@media (max-width: 500px) {
-  .crewList {
-    grid-column: span 2;
-    grid-column-end: 3;
-    grid-column-start: 1;
-  }
-}

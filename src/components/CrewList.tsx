@@ -6,9 +6,9 @@ export const CrewList = () => {
   const { isLoading, data: crew, error } = issSlice.useFetchCrewInISSQuery("", {
     pollingInterval: 50000
   })
+  console.log("render2")
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error occurred</div>;
-  console.log(crew)
   if (crew) return (
 
     <div className="crewList">

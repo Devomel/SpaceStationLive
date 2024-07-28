@@ -6,19 +6,17 @@ interface ITimeProps {
   timestamp: number
 }
 export const Time: FC<ITimeProps> = ({ timestamp }) => {
-  const { day, dayOfWeek, time, year } = getTimeInUTC(timestamp)
+  const { day, dayOfWeek, time, year, month } = getTimeInUTC(timestamp)
 
   return (
     <>
       <div className="timeText">
-        <span>
-          Current UTC Time: {time}
-          <br />
-          {dayOfWeek}, {day}, {year}
-        </span>
+        Time (UTC): {time}
+        <br />
+        {dayOfWeek}, {day}, {month}
+        <br />
+        {year}
       </div>
-
-
     </>
   )
 }
